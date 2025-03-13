@@ -17374,7 +17374,7 @@ BBClient.authorize = function(params, errback){
     params.client.launch = launch;
   }
 
-  var server = urlParam("iss") || urlParam("fhirServiceUrl");
+  var server = "https://fhir-ehr-code.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d"; //"urlParam("iss") || urlParam("fhirServiceUrl");
   if (server){
     if (!params.server){
       params.server = server;
