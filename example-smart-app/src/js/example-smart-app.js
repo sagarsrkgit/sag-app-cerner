@@ -8,7 +8,7 @@
     }
 
     function onReady(smart)  {
-      if (smart.hasOwnProperty('patient')) {
+      if (smart.hasOwnProperty('patient') || smart.hasOwnProperty('user')) {
         var patient = smart.patient;
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
@@ -33,7 +33,7 @@
 
           if (typeof patient.name[0] !== 'undefined') {
             fname = patient.name[0].given.join(' ');
-            lname = patient.name[0].family.join(' ');
+            lname = patient.name[0].family;
           }
 
           var height = byCodes('8302-2');
