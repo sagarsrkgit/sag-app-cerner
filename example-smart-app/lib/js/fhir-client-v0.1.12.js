@@ -17013,7 +17013,7 @@ function completeCodeFlow(params){
   var headers = {};
 
   if (state.client.secret) {
-    headers['Authorization'] = 'Basic ' + btoa(state.client.client_id + ':' + state.client.secret);
+    headers['Authorization'] = 'Basic ' + btoa(state.client.client_id + ':RQB2H_L6mRzi4IQNw_tW2E2hug_IGrKF');
   } else {
     data['client_id'] = state.client.client_id;
   }
